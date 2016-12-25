@@ -6,8 +6,8 @@ package:
 
 source:
   fn: mpmath-{{ version }}.tar.gz
-  url: https://pypi.python.org/packages/source/m/mpmath/mpmath-{{ version }}.tar.gz
-  md5: af5cc956b2673b33a25c3e57299bae7b
+  url: https://pypi.io/packages/source/m/mpmath/mpmath-{{ version }}.tar.gz
+  sha256: 68ddf6426dcda445323467d89892d2cffbbd1ae0b31ac1241b1b671749d63222
 
 build:
   number: 0
@@ -43,3 +43,4 @@ extra:
   recipe-maintainers:
     - asmeurer
     - msarahan
+    - ocefpaf
