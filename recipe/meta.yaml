@@ -10,7 +10,7 @@ source:
   sha256: 68ddf6426dcda445323467d89892d2cffbbd1ae0b31ac1241b1b671749d63222
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install
 
 requirements:
@@ -18,6 +18,7 @@ requirements:
     - python
   run:
     - python
+    - gmpy2       # [(not win) or py35]
 
 test:
   imports:
