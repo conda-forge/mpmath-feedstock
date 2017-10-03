@@ -1,4 +1,4 @@
-{% set version="0.19" %}
+{% set version="1.0.0" %}
 
 package:
   name: mpmath
@@ -7,10 +7,11 @@ package:
 source:
   fn: mpmath-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/mpmath/mpmath-{{ version }}.tar.gz
-  sha256: 68ddf6426dcda445323467d89892d2cffbbd1ae0b31ac1241b1b671749d63222
+  sha256: 04d14803b6875fe6d69e6dccea87d5ae5599802e4b1df7997bddd2024001050c
 
 build:
-  number: 2
+  noarch: python
+  number: 0
   script: python setup.py install
 
 requirements:
@@ -45,3 +46,4 @@ extra:
     - asmeurer
     - msarahan
     - ocefpaf
+    - scopatz
