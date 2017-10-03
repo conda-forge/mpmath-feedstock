@@ -16,9 +16,7 @@ arithmetic with arbitrary precision.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mpmath-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mpmath-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/mpmath-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/mpmath-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/mpmath-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/mpmath-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/mpmath-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mpmath-feedstock)
 
 Current release info
 ====================
