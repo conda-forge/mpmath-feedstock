@@ -1,25 +1,24 @@
-{% set version="1.0.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: mpmath
   version: {{ version }}
 
 source:
-  fn: mpmath-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/mpmath/mpmath-{{ version }}.tar.gz
   sha256: 04d14803b6875fe6d69e6dccea87d5ae5599802e4b1df7997bddd2024001050c
 
 build:
+  number: 1
   noarch: python
-  number: 0
-  script: python setup.py install
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - python
+    - pip
   run:
     - python
-    #- gmpy2       # [(not win) or py35]
 
 test:
   imports:
