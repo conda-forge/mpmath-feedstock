@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
     - setuptools >=36.7.0
     - setuptools_scm >=1.7.0
   run:
-    - python >=3
+    - python >=3.6
 
 test:
   imports:
@@ -32,6 +32,10 @@ test:
     - mpmath.libmp
     - mpmath.matrices
     - mpmath.tests
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://mpmath.org
