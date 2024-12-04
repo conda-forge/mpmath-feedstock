@@ -7,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mpmath-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mpmath-{{ version }}.tar.gz
   sha256: 7a28eb2a9774d00c7bc92411c19a89209d5da7c4c9a9e227be8330a23a25b91f
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools >=36.7.0
     - setuptools_scm >=1.7.0
   run:
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://mpmath.org
