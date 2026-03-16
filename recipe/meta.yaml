@@ -1,5 +1,5 @@
 {% set name = "mpmath" %}
-{% set version = "1.4.0" %}
+{% set version = "1.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mpmath-{{ version }}.tar.gz
-  sha256: d272b40c031ba0ee385e7e5fc735b48560d9838a0d7fbca109919efd23580a22
+  sha256: efd6d1b75f09d69524a67609949812668b28e81ecbfe0ab449ced8c13e92642e
 
 build:
   number: 0
